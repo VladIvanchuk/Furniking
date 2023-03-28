@@ -1,0 +1,33 @@
+@use '../scss/' as *;
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02rem;
+  color: $txt-color;
+}
+a {
+  text-decoration: none;
+  color: $txt-color;
+}
+button,
+input {
+  outline: 0;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
