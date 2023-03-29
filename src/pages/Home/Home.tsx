@@ -1,11 +1,11 @@
-import App from "../../App";
+import { Hero, Offer } from "../../components";
 
 const Home = () => {
   return (
-    <div>
-      Home
-      <App />
-    </div>
+    <>
+      <Hero />
+      <Offer />
+    </>
   );
 };
 

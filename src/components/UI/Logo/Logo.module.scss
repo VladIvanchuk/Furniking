@@ -1,0 +1,14 @@
+@use "../../../assets/scss" as *;
+
+.logo {
+  @include flex(center, null);
+  gap: 5px;
+  width: 260px;
+}
+.logo__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: $txt-color;
+}

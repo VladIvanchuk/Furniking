@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import Details from "../pages/Details/Details";
-import Authorization from "../pages/Authorization/Authorization";
-
+import { Home, Details, Authorization, Profile } from "../pages";
 
 const Router = () => {
   return (
@@ -10,6 +7,7 @@ const Router = () => {
       <Route index element={<Home />} />
       <Route path="/details/:id" element={<Details />} />
       <Route path="/authorization" element={<Authorization />} />
+      <Route path="/profile" element={<Profile />} />
     </Routes>
   );
 };
