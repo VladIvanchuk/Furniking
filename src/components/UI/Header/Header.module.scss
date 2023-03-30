@@ -5,10 +5,10 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-}
 
-.container {
-  background-color: $main-color;
+  &__welcome {
+    background-color: $main-color;
+  }
 }
 
 .welcome {
