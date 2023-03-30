@@ -1,0 +1,28 @@
+@use "../../../assets/scss" as *;
+
+.wrapper {
+  background-color: #f7f8fa;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.container {
+  @include flex(center, null);
+  @include max-width;
+  gap: 82px;
+}
+.dropdown {
+  width: 260px;
+  height: 67px;
+  background-color: $main-color;
+  @include flex(center, center);
+  color: #fff;
+}
+.nav {
+  @include flex(center, null);
+  gap: 65px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

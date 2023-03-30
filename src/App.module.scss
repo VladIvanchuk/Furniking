@@ -1,0 +1,5 @@
+@use "./assets/scss" as *;
+
+.body_container {
+  @include max-width;
+}
