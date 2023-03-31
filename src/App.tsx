@@ -1,5 +1,4 @@
-import { Header, Footer } from "./components";
-import Container from "./components/Container/Container";
+import { Header, Footer, Container } from "./components";
 import Router from "./router/Router";
 
 const App = () => {

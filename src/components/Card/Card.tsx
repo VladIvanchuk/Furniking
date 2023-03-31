@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import s from "./Card.module.scss";
+import { Link } from "react-router-dom";
+import CardHover from "./CardHover";
 
 const Card = () => {
   return (
@@ -17,6 +18,7 @@ const Card = () => {
         </div>
         <div className={s.rate}></div>
       </div>
+      <CardHover />
     </Link>
   );
 };
