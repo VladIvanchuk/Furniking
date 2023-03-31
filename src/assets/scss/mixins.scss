@@ -16,7 +16,6 @@
 @mixin max-width {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 2rem;
   position: relative;
 }
 @mixin flex-column($justify-content){
