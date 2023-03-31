@@ -15,8 +15,12 @@
   width: 260px;
   height: 67px;
   background-color: $main-color;
-  @include flex(center, center);
+  @include flex(center, space-between);
+  padding: 0 40px;
   color: #fff;
+  svg {
+    font-size: 25px;
+  }
 }
 .nav {
   @include flex(center, null);

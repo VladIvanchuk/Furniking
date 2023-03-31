@@ -1,5 +1,8 @@
 export { default as Hero } from "./Hero/Hero";
 export { default as Offer } from "./Offer/Offer";
+export { default as Card } from "./Card/Card";
+export { default as Feature } from "./Feature/Feature";
+export { default as Trending } from "./Trending/Trending";
 
 export { default as Header } from "./UI/Header/Header";
 export { default as Footer } from "./UI/Footer/Footer";
