@@ -1,0 +1,33 @@
+@use "../../assets/scss" as *;
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.filter {
+  display: flex;
+  gap: 70px;
+  width: fit-content;
+  margin: 0 auto 73px auto;
+  button {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #c2c2c2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &.active {
+      color: $main-color;
+    }
+  }
+}

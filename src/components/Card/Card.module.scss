@@ -1,0 +1,68 @@
+@use "../../assets/scss" as *;
+
+.wrapper {
+  width: 270px;
+}
+.image {
+  width: 272px;
+  height: 288px;
+  background-color: #c0c0c0;
+  position: relative;
+}
+.tag {
+  border-radius: 0px 0px 5px 0px;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  padding: 1px 9px;
+  color: #ffffff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.008em;
+  &.new {
+    background: #00b7f1;
+  }
+  &.sale {
+    background: #7ac751;
+  }
+}
+.category {
+  margin-top: 15px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: rgba(117, 117, 117, 0.71);
+}
+.name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #555555;
+  margin-top: 9px;
+}
+.bottom {
+  margin-top: 8px;
+}
+.price,
+.discount {
+  margin-right: 7px;
+  color: $main-color;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+.discount {
+  color: #cccccc;
+  text-decoration-line: line-through;
+  font-weight: 600;
+}
