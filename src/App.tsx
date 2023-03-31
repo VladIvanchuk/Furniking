@@ -1,14 +1,14 @@
 import { Header, Footer } from "./components";
+import Container from "./components/Container/Container";
 import Router from "./router/Router";
-import s from "./App.module.scss";
 
 const App = () => {
   return (
     <>
       <Header />
-      <div className={s.body_container}>
+      <Container>
         <Router />
-      </div>
+      </Container>
       <Footer />
     </>
   );

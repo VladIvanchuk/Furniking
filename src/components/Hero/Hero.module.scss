@@ -1,0 +1,33 @@
+@use "../../assets/scss" as *;
+
+.hero {
+  @include flex(top, space-between);
+
+  &__collection {
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+
+    background-color: #f7f8fa;
+  }
+
+  &__option {
+    padding: 10px 0 14px 29px;
+    border-bottom: #e3e3e3 1px solid;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__category {
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    background-color: inherit;
+
+    @include setFonts($rubik, $rubik-400, $txt-color);
+    letter-spacing: 0.02em;
+  }
+}
