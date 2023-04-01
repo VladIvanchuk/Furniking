@@ -1,0 +1,79 @@
+@use "../../../assets/scss/" as *;
+
+.footer {
+  @include max-width;
+  padding-bottom:35px;
+  a:hover {
+    cursor: pointer;
+    color: $main-color;
+  }
+  .up {
+    @include flex(flex-start, space-between);
+    margin-top: 115px; //delete after adding blog-secttion
+    margin-bottom: 50px;
+
+    .left {
+      @include flex-column(flex-start);
+      max-width: 350px;
+      margin-right: 85px;
+      .leftName {
+        @include flex(center, flex-start);
+        margin-bottom: 15px;
+        img {
+          margin-right: 5px;
+        }
+        span {
+          @include setFonts($rubik, $rubik-500, $txt-color);
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+      .leftDesc {
+        @include setFonts($rubik, $rubik-400, $txt-color);
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 8px;
+      }
+      .leftIcons {
+        @include flex(center,space-between);
+        gap: 15px;
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: $txt-color;
+          &:hover {
+            fill: $main-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .right {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 180px;
+      .column {
+        .columnName {
+          margin-bottom: 20px;
+          @include setFonts($rubik, $rubik-500, $txt-color);
+        }
+        .columnLinks {
+          @include flex-column(flex-start);
+          @include setFonts($rubik, $rubik-400, $txt-color);
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    @include setFonts($rubik, $rubik-400,$txt-color);
+    .bottomRight {
+      a+a{
+        margin-left: 50px;
+      }
+    }
+  }
+}
