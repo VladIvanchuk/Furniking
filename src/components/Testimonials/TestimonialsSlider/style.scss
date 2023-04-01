@@ -1,0 +1,43 @@
+@use "../../../assets/scss" as *;
+
+.swiper {
+  width: 1035px;
+  height: 350px;
+}
+.profileImg {
+  height: 88px;
+  position: absolute;
+  top: -44px;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 1035px;
+  height: 315px;
+  // background-color: #eeeaea;
+  padding: 80px 125px;
+  text-align: center;
+  @include flex-column(center);
+  letter-spacing: 0.005em;
+}
+.desc {
+  max-width: 560px;
+  @include setFonts($dm-sans, $dm-sans-400, $reply-txt-color);
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+.userName {
+  @include setFonts($mulish, $mulish-600, $txt-color);
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 8px;
+}
+.userProffecian {
+  @include setFonts($rubik,$rubik-400,$reply-txt-color)
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

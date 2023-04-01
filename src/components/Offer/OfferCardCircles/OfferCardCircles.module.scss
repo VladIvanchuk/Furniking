@@ -8,6 +8,10 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 5px;
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.3)
+  }
   .circlesNum {
     @include setFonts($rubik, $rubik-500, white);
     font-size: 14px;
