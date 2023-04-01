@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b5e2a3-ae8d-4d2f-97c6-4b2dca4edfa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Container/Container.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Container/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Slider/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
