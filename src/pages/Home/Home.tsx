@@ -1,6 +1,4 @@
-import { Hero, Offer } from "../../components";
-import Trending from "../../components/Trending/Trending";
-import Product from "../../components/Product/Product";
+import { Hero, Offer, Testimonials,Trending,Product } from "../../components";
 
 const Home = () => {
   return (
@@ -8,6 +6,7 @@ const Home = () => {
       <Hero />
       <Trending />
       <Product />
+      <Testimonials />
       <Offer />
     </>
   );
