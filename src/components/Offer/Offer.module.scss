@@ -1,12 +1,14 @@
-@use '../../assets/scss' as *;
+@use "../../assets/scss" as *;
 
 .specialOffer {
-    h1 {
+  h1 {
     text-align: center;
     @include setFonts($mulish, $mulish-700, $txt-color);
     margin-bottom: 60px;
-    }
-    .offerWrapper {
-        @include flex(center, space-between);
-    }
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .offerWrapper {
+    @include flex(center, space-between);
+  }
 }

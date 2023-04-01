@@ -1,0 +1,12 @@
+@use '../../assets/scss' as *;
+
+.testimonials{
+    h1 {
+        text-align: center;
+        @include setFonts($mulish, $mulish-700, $txt-color);
+        margin-bottom: 60px;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+}
