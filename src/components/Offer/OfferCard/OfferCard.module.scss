@@ -25,6 +25,8 @@
     }
     .leftPrice {
       margin-bottom: 30px;
+      display: flex;
+      align-items: center;
       .newPrice {
         @include setFonts($mulish, $mulish-700, $main-color);
         font-size: 18px;
