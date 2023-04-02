@@ -1,0 +1,11 @@
+@use "../../../assets/scss" as *;
+
+.buyBtn {
+  padding: 6px 10px;
+  background-color: $main-color;
+  border: none;
+  @include setFonts($mulish, $mulish-700, white);
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 2px;
+}

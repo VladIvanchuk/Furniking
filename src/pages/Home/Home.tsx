@@ -1,11 +1,13 @@
-import { Hero, Offer, Trending } from "../../components";
+import { Hero, Offer, Testimonials,Trending,Product } from "../../components";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Offer />
       <Trending />
+      <Offer />
+      <Product />
+      <Testimonials />
     </>
   );
 };

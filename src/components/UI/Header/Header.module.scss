@@ -5,7 +5,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-
   &__welcome {
     background-color: $main-color;
   }
@@ -34,9 +33,9 @@
 }
 .header__main {
   @include flex(center, null);
+  @include max-width;
   padding: 21px 0;
   height: 92px;
-  @include max-width;
 }
 .header__nav {
   color: $txt-color;

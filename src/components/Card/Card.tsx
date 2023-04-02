@@ -1,12 +1,13 @@
 import s from "./Card.module.scss";
 import { Link } from "react-router-dom";
 import CardHover from "./CardHover";
+import CardTag from "./CardTag/CardTag";
 
 const Card = () => {
   return (
     <Link to="/" className={s.wrapper}>
       <div className={s.image}>
-        <div className={`${s.tag} ${s.sale}`}>New</div>
+        <CardTag type="New" />
         <img src="" alt="" />
       </div>
       <div className={s.category}>{"Chair"}</div>
