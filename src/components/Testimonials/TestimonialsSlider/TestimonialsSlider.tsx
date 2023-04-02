@@ -9,7 +9,7 @@ import "./style.scss";
 
 import { EffectFlip, Navigation } from "swiper";
 
-import profileImg from "../../../assets/img/profileImg/ProfileImg.png";
+import profileImg from "../../../assets/img/profileImg/profileImg.png";
 
 export default function App() {
   return (
