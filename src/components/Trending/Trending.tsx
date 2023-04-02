@@ -8,7 +8,7 @@ const Trending = () => {
   const [selected, setSelected] = useState(categories[0]);
 
   return (
-    <>
+    <div id="trending">
       <h1 className={s.header}>TRENDING</h1>
       <div className={s.filter}>
         {categories.map((category, i) => (
@@ -31,7 +31,7 @@ const Trending = () => {
         <Card />
         <Card />
       </div>
-    </>
+    </div>
   );
 };
 

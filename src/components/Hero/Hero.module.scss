@@ -15,9 +15,15 @@
   &__option {
     padding: 10px 0 14px 29px;
     border-bottom: #e3e3e3 1px solid;
-
+    cursor: pointer;
     &:last-child {
       border-bottom: none;
+    }
+    &:hover {
+      background-color: #ededed;
+      .hero__category {
+        color: $main-color;
+      }
     }
   }
 
@@ -30,5 +36,6 @@
 
     @include setFonts($rubik, $rubik-400, $txt-color);
     letter-spacing: 0.02em;
+    font-size: 14px;
   }
 }

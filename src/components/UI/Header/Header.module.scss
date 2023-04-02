@@ -5,6 +5,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+
   &__welcome {
     background-color: $main-color;
   }
@@ -36,6 +37,9 @@
   @include max-width;
   padding: 21px 0;
   height: 92px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 .header__nav {
   color: $txt-color;
@@ -62,4 +66,9 @@
   border-radius: 50%;
   height: 16px;
   width: 16px;
+}
+.sticky {
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
