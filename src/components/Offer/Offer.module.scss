@@ -2,18 +2,13 @@
 
 .specialOffer {
   margin-bottom: 120px;
+
   h1 {
     text-align: center;
     @include setFonts($mulish, $mulish-700, $txt-color);
     margin-bottom: 60px;
-    font-size: 36px;
-    line-height: 45px;
   }
   .offerWrapper {
     @include flex(center, space-between);
-    @include laptop{
-      flex-direction: column;
-      gap: 20px;
-    }
   }
 }

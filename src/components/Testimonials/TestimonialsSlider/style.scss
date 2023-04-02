@@ -8,14 +8,14 @@
   height: 88px;
   position: absolute;
   top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-slide {
   position: relative;
   width: 1035px;
   height: 315px;
-  background-color: #eeeaea;
-  padding: 80px 125px;
   text-align: center;
   @include flex-column(center);
   letter-spacing: 0.005em;
@@ -34,10 +34,15 @@
   margin-bottom: 8px;
 }
 .userProffecian {
-  @include setFonts($rubik,$rubik-400,$reply-txt-color)
+  @include setFonts($rubik, $rubik-400, $reply-txt-color);
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+.testimonial {
+  background-color: #f8fafb;
+  padding: 5rem 8rem 3rem 8rem;
+  position: relative;
 }

@@ -7,7 +7,7 @@ const Home = () => {
       <Trending />
       <Offer />
       <Product />
-      <Testimonials/>
+      <Testimonials />
     </>
   );
 };

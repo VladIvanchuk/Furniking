@@ -1,6 +1,7 @@
 export { default as Hero } from "./Hero/Hero";
 export { default as Offer } from "./Offer/Offer";
 export { default as Card } from "./Card/Card";
+export { default as CardTag } from "./Card/CardTag/CardTag";
 export { default as OfferCard } from "./Offer/OfferCard/OfferCard";
 export { default as CardHover } from "./Card/CardHover";
 export { default as Feature } from "./Feature/Feature";
