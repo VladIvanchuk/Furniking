@@ -5,9 +5,9 @@ const Home = () => {
     <>
       <Hero />
       <Trending />
+      <Offer />
       <Product />
       <Testimonials />
-      <Offer />
     </>
   );
 };

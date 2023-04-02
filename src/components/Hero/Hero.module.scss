@@ -2,6 +2,7 @@
 
 .hero {
   @include flex(top, space-between);
+  margin-bottom: 65px;
 
   &__collection {
     display: flex;
