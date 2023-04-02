@@ -11,5 +11,9 @@
   }
   .offerWrapper {
     @include flex(center, space-between);
+    @include laptop{
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }

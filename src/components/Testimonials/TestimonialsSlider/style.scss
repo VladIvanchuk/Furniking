@@ -1,7 +1,7 @@
 @use "../../../assets/scss" as *;
 
 .swiper {
-  width: 1035px;
+  width: 86.25%;
   height: 350px;
 }
 .profileImg {
@@ -14,7 +14,7 @@
   position: relative;
   width: 1035px;
   height: 315px;
-  // background-color: #eeeaea;
+  background-color: #eeeaea;
   padding: 80px 125px;
   text-align: center;
   @include flex-column(center);
