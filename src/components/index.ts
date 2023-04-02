@@ -5,8 +5,8 @@ export { default as OfferCard } from "./Offer/OfferCard/OfferCard";
 export { default as CardHover } from "./Card/CardHover";
 export { default as Feature } from "./Feature/Feature";
 export { default as Trending } from "./Trending/Trending";
+export { default as Product } from "./Product/Product";
 export { default as Testimonials } from "./Testimonials/Testimonials";
-
 export { default as Container } from "./Container/Container";
 
 export { default as Header } from "./UI/Header/Header";
