@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b5e2a3-ae8d-4d2f-97c6-4b2dca4edfa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Shop/Shop.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Shop/Shop.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/NavBar/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/Router.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev-andrii" />
       </map>
     </option>
   </component>
@@ -76,11 +76,20 @@
       <workItem from="1680080018793" duration="652000" />
       <workItem from="1680088725018" duration="447000" />
       <workItem from="1680167503961" duration="13471000" />
+      <workItem from="1680417883405" duration="983000" />
+      <workItem from="1680433870113" duration="769000" />
+      <workItem from="1680434673106" duration="18000" />
+      <workItem from="1680508523254" duration="7618000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Testimonials/Testimonials.jsx" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
