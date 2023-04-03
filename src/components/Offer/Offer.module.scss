@@ -10,5 +10,9 @@
   }
   .offerWrapper {
     @include flex(center, space-between);
+    @include tablet {
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 }

@@ -11,11 +11,22 @@
     @include flex(flex-start, space-between);
     margin-top: 115px; //delete after adding blog-secttion
     margin-bottom: 50px;
+    @include tablet{
+      display: block;
+      flex-direction: column;
+      align-items: center;
+    }
 
     .left {
       @include flex-column(flex-start);
       max-width: 350px;
       margin-right: 85px;
+      @include tablet {
+        align-items: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
       .leftName {
         @include flex(center, flex-start);
         margin-bottom: 15px;
@@ -33,6 +44,9 @@
         font-size: 16px;
         line-height: 32px;
         margin-bottom: 8px;
+        @include tablet {
+          text-align: center;
+        }
       }
       .leftIcons {
         @include flex(center, space-between);
@@ -49,9 +63,9 @@
       }
     }
     .right {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-gap: 180px;
+      // display: grid;
+      // grid-template-columns: repeat(3, auto);
+      // grid-gap: 180px;
       .column {
         .columnName {
           margin-bottom: 20px;
