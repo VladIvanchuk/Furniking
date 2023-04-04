@@ -5,10 +5,12 @@ export { default as CardTag } from "./Card/CardTag/CardTag";
 export { default as OfferCard } from "./Offer/OfferCard/OfferCard";
 export { default as CardHover } from "./Card/CardHover";
 export { default as Feature } from "./Feature/Feature";
+export { default as FeatureItem } from "./Feature/FeatureItem";
 export { default as Trending } from "./Trending/Trending";
 export { default as Product } from "./Product/Product";
 export { default as Testimonials } from "./Testimonials/Testimonials";
 export { default as Container } from "./Container/Container";
+export { default as OfferTiles } from "./OfferTiles/OfferTiles";
 
 export { default as Header } from "./UI/Header/Header";
 export { default as Footer } from "./UI/Footer/Footer";
