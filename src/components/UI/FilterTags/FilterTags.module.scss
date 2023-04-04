@@ -1,0 +1,21 @@
+@use "../../../assets/scss" as *;
+
+.tags {
+  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  background-color: $main-color;
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2;
+  &:hover {
+    background-color: #8ce05e;
+    transition: 0.2;
+  }
+}

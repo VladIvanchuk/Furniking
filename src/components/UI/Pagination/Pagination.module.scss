@@ -1,0 +1,29 @@
+@use "../../../assets/scss" as *;
+
+.shop {
+  &__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 14px;
+    margin: 0 auto;
+  }
+  &__page {
+    padding: 6px 14px;
+    border: 1px solid $main-color;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    background-color: #fff;
+
+    @include setFonts($mulish, $mulish-400, #000);
+    font-size: 24px;
+  }
+}

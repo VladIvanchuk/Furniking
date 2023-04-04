@@ -1,7 +1,7 @@
 @use "../../assets/scss" as *;
 
 .wrapper {
-  width: 270px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   &:hover .hover {
