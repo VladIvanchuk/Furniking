@@ -1,9 +1,11 @@
 import s from "./Header.module.scss";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
-import { BsBag, BsBell } from "react-icons/bs";
+import { BsBag } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
 import { Logo, SearchBar, NavBar } from "../../";
 import Container from "../../Container/Container";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,16 +31,16 @@ const Header = () => {
             <Logo />
             <SearchBar />
             <div className={s.header__nav}>
-              <span className={s.bag}>
+              <Link to="" className={s.bag}>
                 <BsBag />
                 <div className={s.count}>4</div>
-              </span>
-              <span>
-                <BsBell />
-              </span>
-              <span>
+              </Link>
+              <Link to="">
+                <AiOutlineHeart />
+              </Link>
+              <Link to="">
                 <RxAvatar />
-              </span>
+              </Link>
             </div>
           </header>
         </Container>
