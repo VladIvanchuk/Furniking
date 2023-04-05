@@ -63,9 +63,6 @@
       }
     }
     .right {
-      // display: grid;
-      // grid-template-columns: repeat(3, auto);
-      // grid-gap: 180px;
       .column {
         .columnName {
           margin-bottom: 20px;
@@ -84,6 +81,10 @@
     display: flex;
     justify-content: space-between;
     @include setFonts($rubik, $rubik-400, $txt-color);
+    @include mobile-m {
+      flex-direction: column;
+      align-items: center;
+    }
     .bottomRight {
       a + a {
         margin-left: 50px;

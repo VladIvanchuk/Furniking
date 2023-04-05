@@ -1,0 +1,100 @@
+@use "../../assets/scss" as *;
+.detailsHeader {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 25px;
+  .detailsHeader_top {
+    @include setFonts($mulish, $mulish-700, $txt-color);
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .detailsHeader_bottom {
+    @include flex(flex-end, space-between);
+    .bottomLeft {
+      @include flex(center, space-between);
+      button {
+        @include setFonts($mulish, $mulish-600, $txt-color);
+        font-size: 24px;
+        line-height: 30px;
+        padding: 5px 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &.active {
+          color: $main-color;
+        }
+      }
+      button + button {
+        margin-left: 30px;
+      }
+    }
+    .bottomRight {
+      .rightTitle {
+        @include setFonts($mulish, $mulish-600, $txt-color);
+        font-size: 24px;
+        line-height: 30px;
+      }
+      .rightStars {
+        margin-top: 15px;
+        span {
+          margin-right: 10px;
+        }
+        svg {
+          fill: none;
+          &:hover {
+            fill: $main-color;
+          }
+        }
+        svg + svg {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+.detailsInfo {
+  .detailsInfo_top {
+    @include flex(center,space-between);
+    gap: 35px;
+    .topLeft {
+      @include flex(center, space-between);
+    }
+    .topRight {
+      @include flex(center, space-between);
+      .rightSell {
+        @include flex(flex-end, space-between);
+        gap: 150px;
+        .sellInfo {
+          @include flex-column(flex-start);
+          .oldPrice {
+            @include setFonts($mulish, $mulish-600, #cccccc);
+            text-decoration: line-through;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            margin-bottom: 5px
+          }
+          .newPrice {
+            @include setFonts($mulish, $mulish-700, $main-color);
+            font-size: 36px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            margin-bottom: 15px
+          }
+          .isInStock {
+            @include setFonts($mulish, $mulish-600, $main-color);
+
+          }
+        }
+        .sellBtn {
+          @include flex(flex-end, space-between);
+          gap:40px;
+        }
+      }
+    }
+  }
+}

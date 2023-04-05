@@ -21,6 +21,9 @@
   @include mobile-m {
     animation: wave 0.5s infinite alternate;
     width: 100%;
+    &:hover{
+      box-shadow: 12px 12px 2px 1px $main-color;
+    }
     &:after {
         content: "->";
         position: absolute;
