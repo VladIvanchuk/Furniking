@@ -21,9 +21,9 @@ const TestimonialsSlider = () => {
         navigation={true}
         modules={[EffectFlip, Navigation]}
         loop={true}
-        className="mySwiper"
+        className="testimonialsSlider"
       >
-        <SwiperSlide>
+        <SwiperSlide className="testimonialsSlide">
           <div className="testimonial">
             <div className="profileImg">
               <img src={profileImg} alt="profileImg" />
@@ -38,7 +38,7 @@ const TestimonialsSlider = () => {
             <div className="userProffecian">Co-founder</div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="testimonialsSlide">
           <div className="testimonial">
             <div className="profileImg">
               <img src={profileImg} alt="profileImg" />
@@ -53,7 +53,7 @@ const TestimonialsSlider = () => {
             <div className="userProffecian">Co-founder</div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="testimonialsSlide">
           <div className="testimonial">
             <div className="profileImg">
               <img src={profileImg} alt="profileImg" />

@@ -1,0 +1,30 @@
+@use "../../../assets/scss" as *;
+
+.wrapper {
+  background: #ffffff;
+  margin-right: 30px;
+  min-width: 260px;
+    
+  .shop {
+    &__filter {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      box-shadow: none;
+      margin: 0 !important;
+      &::before {
+        height: 0;
+      }
+    }
+    &__name {
+      min-height: 50px !important;
+      margin: 0;
+      font-size: 20px;
+      border-top: 1px solid rgb(211, 211, 211);
+    }
+    &__options {
+      padding: 0 24px 16px !important;
+    }
+  }
+}

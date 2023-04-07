@@ -1,5 +1,6 @@
 .imgSlider {
   width: 500px;
+  height: auto;
   transition: transform 0.7s ease;
   &:hover {
     transform: scale(1.1);
@@ -8,5 +9,5 @@
 }
 .slide {
   width: 100%;
-  height: 100%;
+  height: auto;
 }

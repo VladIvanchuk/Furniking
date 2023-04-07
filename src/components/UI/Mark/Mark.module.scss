@@ -1,0 +1,15 @@
+@use "../../../assets/scss" as *;
+
+.wrapper {
+  display: flex;
+  gap: 3px;
+  svg {
+    font-size: 16px;
+    color: #cccccc;
+  }
+}
+.active {
+  svg {
+    color: $main-color;
+  }
+}

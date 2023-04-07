@@ -1,7 +1,15 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import s from "./NavBar.module.scss";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Container from "../../Container/Container";
+
+const menu = [
+  { label: "Home", link: "/" },
+  { label: "Shop", link: "/shop" },
+  { label: "Trending", link: "/trending" },
+  { label: "Special Offer", link: "/special-offer" },
+  { label: "Testimonials", link: "/testimonials" },
+];
 
 const NavBar = () => {
   return (
@@ -13,21 +21,11 @@ const NavBar = () => {
             <span>ALL COLLECTIONS</span>
           </div>
           <ul className={s.nav}>
-            <Link to="/">
-              <li>HOME</li>
-            </Link>
-            <Link to="/shop">
-              <li>SHOP</li>
-            </Link>
-            <Link to="/">
-              <li>TRENDING</li>
-            </Link>
-            <Link to="/">
-              <li>SPECIAL OFFER</li>
-            </Link>
-            <Link to="/">
-              <li>TESTIMONIALS</li>
-            </Link>
+            {menu.map((value: { label: string; link: string }, index: number) => (
+              <NavLink className={s.link} key={index} to={value.link}>
+                <li>{value.label.toUpperCase()}</li>
+              </NavLink>
+            ))}
           </ul>
         </div>
       </Container>

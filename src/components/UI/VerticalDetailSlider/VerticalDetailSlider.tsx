@@ -22,33 +22,33 @@ export default function App() {
           delay: 3000,
         }}
         modules={[Autoplay]}
-        className="mySwiper"
+        className="vericalSlider"
       >
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChair} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChairSecond} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChairSecond} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChairSecond} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChair} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChairSecond} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChair} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChair} alt="DetailChair" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="vertSlide">
           <img src={DetailChairSecond} alt="DetailChair" />
         </SwiperSlide>
       </Swiper>

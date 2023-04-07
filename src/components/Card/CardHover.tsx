@@ -5,38 +5,38 @@ import { BsBagPlus } from "react-icons/bs";
 import { HiOutlineRefresh } from "react-icons/hi";
 
 const CardHover = () => {
-  const [activeIcons, setActiveIcons] = useState<string[]>([]);
+  const [active, setActive] = useState<string[]>([]);
 
   const handleIconClick = (iconName: string) => {
-    if (activeIcons.includes(iconName)) {
-      setActiveIcons(activeIcons.filter((name) => name !== iconName));
+    if (active.includes(iconName)) {
+      setActive(active.filter((name) => name !== iconName));
     } else {
-      setActiveIcons([...activeIcons, iconName]);
+      setActive([...active, iconName]);
     }
   };
 
   return (
     <div className={s.hover}>
       <div
-        className={`${s.icon} ${activeIcons.includes("heart") ? s.active : ""}`}
+        className={`${s.icon} ${active.includes("heart") ? s.active : ""}`}
         onClick={() => handleIconClick("heart")}
       >
         <AiOutlineHeart />
       </div>
       <div
-        className={`${s.icon} ${activeIcons.includes("bag") ? s.active : ""}`}
+        className={`${s.icon} ${active.includes("bag") ? s.active : ""}`}
         onClick={() => handleIconClick("bag")}
       >
         <BsBagPlus />
       </div>
       <div
-        className={`${s.icon} ${activeIcons.includes("refresh") ? s.active : ""}`}
+        className={`${s.icon} ${active.includes("refresh") ? s.active : ""}`}
         onClick={() => handleIconClick("refresh")}
       >
         <HiOutlineRefresh />
       </div>
       <div
-        className={`${s.icon} ${activeIcons.includes("eye") ? s.active : ""}`}
+        className={`${s.icon} ${active.includes("eye") ? s.active : ""}`}
         onClick={() => handleIconClick("eye")}
       >
         <AiOutlineEye />

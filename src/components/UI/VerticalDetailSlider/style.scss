@@ -1,16 +1,14 @@
-.swiper {
+.vericalSlider {
     width: 100px;
     height: 460px;
   }
   
-  .swiper-slide {
+  .vertSlide {
     width: 80px;
     height: 80px;
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;

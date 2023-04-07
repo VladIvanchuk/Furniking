@@ -1,9 +1,19 @@
-import { Hero, Offer, Testimonials,Trending,Product } from "../../components";
+import {
+  Hero,
+  Offer,
+  Testimonials,
+  Trending,
+  Product,
+  Feature,
+  OfferTiles,
+} from "../../components";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <Feature />
+      <OfferTiles />
       <Trending />
       <Offer />
       <Product />

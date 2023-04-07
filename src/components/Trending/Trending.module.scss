@@ -1,10 +1,10 @@
 @use "../../assets/scss" as *;
 
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 45px;
+  grid-column-gap: 30px;
   margin-bottom: 100px;
 }
 .header {
