@@ -1,13 +1,16 @@
+import { useState } from "react";
 import s from "./Header.module.scss";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
 import { BsBag } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
-import { Logo, SearchBar, NavBar } from "../../";
+import { Logo, SearchBar, NavBar, Cart } from "../../";
 import Container from "../../Container/Container";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
     <div className={s.header}>
       <div className={s.header__welcome}>
@@ -31,7 +34,7 @@ const Header = () => {
             <Logo />
             <SearchBar />
             <div className={s.header__nav}>
-              <Link to="" className={s.bag}>
+              <Link to="#" className={s.bag} onClick={() => setCartOpen(true)}>
                 <BsBag />
                 <div className={s.count}>4</div>
               </Link>
@@ -46,6 +49,7 @@ const Header = () => {
         </Container>
         <NavBar />
       </div>
+      <Cart state={cartOpen} setState={setCartOpen} />
     </div>
   );
 };
