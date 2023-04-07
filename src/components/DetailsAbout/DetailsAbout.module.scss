@@ -1,0 +1,105 @@
+@use "../../assets/scss" as *;
+
+.detailsInfo {
+  margin-bottom: 60px;
+  .detailsInfo_top {
+    @include flex(null, space-between);
+    gap: 35px;
+
+    .topRight {
+      @include flex-column(center);
+      .rightSell {
+        width: 100%;
+        @include flex(flex-end, space-between);
+        gap: 150px;
+        margin-bottom: 20px;
+        .sellInfo {
+          @include flex-column(flex-start);
+          .oldPrice {
+            @include setFonts($mulish, $mulish-600, #cccccc);
+            text-decoration: line-through;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            margin-bottom: 5px;
+          }
+          .newPrice {
+            @include setFonts($mulish, $mulish-700, $main-color);
+            font-size: 36px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            margin-bottom: 15px;
+          }
+          .isInStock {
+            @include setFonts($mulish, $mulish-600, $main-color);
+          }
+        }
+        .sellBtn {
+          @include flex(flex-end, space-between);
+          gap: 25px;
+        }
+      }
+      .sellGarantee {
+        width: 100%;
+        .like {
+          @include setFonts($mulish, $mulish-600, $txt-color);
+          font-size: 18px;
+          @include flex(center, flex-start);
+          margin-bottom: 40px;
+          svg {
+            fill: $main-color;
+          }
+          span {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .detailsInteresting {
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .row {
+      padding: 16px 20px;
+      border: 1px solid $main-color;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: transform 0.2s ease;
+      @include flex(center, null);
+      &:hover {
+        transform: scale(1.02);
+      }
+      svg {
+        flex-shrink: 0;
+        color: $main-color;
+        font-size: 25px !important;
+      }
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.detailsDesc {
+  margin-bottom: 50px;
+  h3 {
+    margin-bottom: 40px;
+    @include setFonts($rubik, $rubik-400, $txt-color);
+    font-size: 24px;
+  }
+
+  p {
+    @include setFonts($rubik, $rubik-400, black);
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
