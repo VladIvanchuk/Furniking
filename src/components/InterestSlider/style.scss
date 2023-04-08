@@ -1,0 +1,18 @@
+@use "../../assets/scss" as *;
+
+.interestSlider {
+  width: 100%;
+  padding: 0 30px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 40% !important;
+  }
+}
+.interestSlide {
+  display: flex;
+}
+.interest-h3 {
+  @include setFonts($rubik, $rubik-400, $txt-color);
+  font-size: 24px;
+  margin-bottom: 40px;
+}

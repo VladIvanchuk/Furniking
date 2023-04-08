@@ -1,17 +1,19 @@
 @use "../../../assets/scss" as *;
 
-.addBtn {
+.button {
   padding: 6px 10px;
   background-color: white;
   border: 1px solid $main-color;
   @include setFonts($mulish, $mulish-700, $main-color);
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 15px;
   border-radius: 2px;
   transition: transform 0.3s ease;
   &:hover {
+    transform: scale(1.1);
+  }
+  &.primary {
     background-color: $main-color;
-    color: white;
-    transform: scale(1.3);
+    border: 1px solid #fff;
+    color: #fff;
   }
 }
