@@ -2,6 +2,7 @@ import s from "./Card.module.scss";
 import { Link } from "react-router-dom";
 import CardHover from "./CardHover";
 import CardTag from "./CardTag/CardTag";
+import Mark from "../UI/Mark/Mark";
 
 const Card = () => {
   return (
@@ -17,7 +18,7 @@ const Card = () => {
           <span className={s.price}>${180}</span>
           <span className={s.discount}>${250}</span>
         </div>
-        <div className={s.rate}></div>
+        <Mark mark={4} />
       </div>
       <CardHover />
     </Link>

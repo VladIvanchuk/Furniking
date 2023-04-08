@@ -1,0 +1,13 @@
+@use "../../../assets/scss" as *;
+
+.shop {
+  padding-top: 40px;
+
+  &__category {
+    background: #fff;
+    border: 1px solid $main-color;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+  }
+}

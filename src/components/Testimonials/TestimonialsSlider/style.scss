@@ -1,8 +1,9 @@
 @use "../../../assets/scss" as *;
 
-.swiper {
+.testimonialsSlider {
   width: 86.25%;
   height: 350px;
+  margin-top: 30px;
 }
 .profileImg {
   height: 88px;
@@ -12,7 +13,7 @@
   transform: translateX(-50%);
 }
 
-.swiper-slide {
+.testimonialsSlide {
   position: relative;
   width: 1035px;
   height: 315px;

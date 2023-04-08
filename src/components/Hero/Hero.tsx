@@ -1,5 +1,6 @@
 import s from "./Hero.module.scss";
 import Slider from "../UI/Slider/Slider";
+import { Link } from "react-router-dom";
 
 const allCollection: Array<string> = [
   "All",
@@ -18,9 +19,9 @@ const Hero = () => {
       <ul className={s.hero__collection}>
         {allCollection.map((category: string, id: number) => (
           <li key={id} className={s.hero__option}>
-            <button type={"button"} className={s.hero__category}>
+            <Link to="" className={s.hero__category}>
               {category}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>

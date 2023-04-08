@@ -10,7 +10,6 @@
     @include flex(center, null);
     gap: 82px;
   }
-
 }
 
 .dropdown {
@@ -31,4 +30,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+}
+.link {
+  &:hover {
+    color: $main-color;
+  }
 }
