@@ -18,7 +18,7 @@ const AuthPopup = ({setState}: Props) => {
         </h1>
 
         <p className={s.popup__subtitle}>
-          Sign in and start managing your candidates!
+          Start managing your furniture
         </p>
 
         <input

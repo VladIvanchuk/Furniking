@@ -59,7 +59,7 @@ const Header = () => {
       </div>
 
       {
-        activePopup && <AuthPopup setState={setActivePopup} state={activePopup}/>
+        activePopup && <AuthPopup setState={setActivePopup}/>
       }
     </>
   );
