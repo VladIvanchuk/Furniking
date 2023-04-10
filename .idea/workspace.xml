@@ -84,6 +84,7 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/components/Testimonials/Testimonials.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Testimonials/Testimonials.jsx" />
       </list>
     </option>
   </component>

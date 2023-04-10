@@ -7,50 +7,61 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { Logo, SearchBar, NavBar, Cart } from "../../";
 import Container from "../../Container/Container";
 import { Link } from "react-router-dom";
+import AuthPopup from "../../AuthPopup/AuthPopup";
 
 const Header = () => {
   const [cartOpen, setCartOpen] = useState(false);
 
+  const [activePopup, setActivePopup] = useState(false);
+
   return (
-    <div className={s.header}>
-      <div className={s.header__welcome}>
-        <Container>
-          <div className={s.welcome}>
-            <span>Welcome to our online shop</span>
-            <div>
+    <>
+      <div className={s.header}>
+        <div className={s.header__welcome}>
+          <Container>
+            <div className={s.welcome}>
+              <span>Welcome to our online shop</span>
+              <div>
               <span className={s.currency}>
                 English (USD)
                 <IoIosArrowDown />
               </span>
-              <span>|</span>
-              <a href="/authorization">Login or Sign up</a>
+                <span>|</span>
+                <a onClick={() => (
+                  setActivePopup(true)
+                )} >Login or Sign up</a>
+              </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        </div>
+        <div className={s.sticky}>
+          <Container>
+            <header className={s.header__main}>
+              <Logo />
+              <SearchBar />
+              <div className={s.header__nav}>
+                <Link to="#" className={s.bag} onClick={() => setCartOpen(true)}>
+                  <BsBag />
+                  <div className={s.count}>4</div>
+                </Link>
+                <Link to="">
+                  <AiOutlineHeart />
+                </Link>
+                <Link to="">
+                  <RxAvatar />
+                </Link>
+              </div>
+            </header>
+          </Container>
+          <NavBar />
+        </div>
+        <Cart state={cartOpen} setState={setCartOpen} />
       </div>
-      <div className={s.sticky}>
-        <Container>
-          <header className={s.header__main}>
-            <Logo />
-            <SearchBar />
-            <div className={s.header__nav}>
-              <Link to="#" className={s.bag} onClick={() => setCartOpen(true)}>
-                <BsBag />
-                <div className={s.count}>4</div>
-              </Link>
-              <Link to="">
-                <AiOutlineHeart />
-              </Link>
-              <Link to="">
-                <RxAvatar />
-              </Link>
-            </div>
-          </header>
-        </Container>
-        <NavBar />
-      </div>
-      <Cart state={cartOpen} setState={setCartOpen} />
-    </div>
+
+      {
+        activePopup && <AuthPopup setState={setActivePopup} state={activePopup}/>
+      }
+    </>
   );
 };
 
