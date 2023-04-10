@@ -1,0 +1,39 @@
+@use "../../../assets/scss" as *;
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  @include setFonts($rubik, $rubik-400, $txt-color);
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  input::placeholder {
+    @include setFonts($rubik, $rubik-400, $txt-color);
+    font-size: 16px;
+  }
+}
+.addresses {
+  margin-bottom: 20px;
+}
+.icon {
+    margin-left: 10px;
+}
+input,
+button {
+  border: none;
+  background-color: transparent;
+}
+button {
+    @include setFonts($rubik, $rubik-400, $main-color);
+    cursor: pointer;
+    font-size: 16px;
+}

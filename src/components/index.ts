@@ -27,5 +27,7 @@ export { default as Pagination } from "./UI/Pagination/Pagination";
 export { default as Sort } from "./UI/Sort/Sort";
 export { default as FilterTag } from "./UI/FilterTags/FilterTag";
 export { default as FilterTags } from "./UI/FilterTags/FilterTags";
+export { default as Cart } from "./UI/Cart/Cart";
+export { default as CartItem } from "./UI/Cart/CartItem";
 export { default as ProductSlider } from "./UI/ProductSlider/ProductSlider";
 export { default as Button } from "./UI/Button/Button";
